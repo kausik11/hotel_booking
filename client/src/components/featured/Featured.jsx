@@ -3,7 +3,7 @@ import "./featured.css";
 
 const Featured = () => {
   // creating a custom hook
-  const {data,loading,error,reFetch} = useFetch("/hotels/countByCity?cities=berlin,london,madrid")
+  const {data,loading,error,reFetch} = useFetch("/hotels/countByCity?cities=kolkata,bhubaneshwar,varanasi,agra")
 
   return (
     <div className="featured">
@@ -12,36 +12,47 @@ const Featured = () => {
       <>
       <div className="featuredItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
+          src="https://www.savaari.com/blog/wp-content/uploads/2023/07/Kolkata-India-Victoria-Memorial1.webp"
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Berlin</h1>
-          <h2>{data[0]}properties</h2>
+          <h1>Kolkata</h1>
+          <h2>{data[0]} properties</h2>
         </div>
       </div>
       
       <div className="featuredItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/690334.webp?k=b99df435f06a15a1568ddd5f55d239507c0156985577681ab91274f917af6dbb&o="
+          src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018337.jpg?k=80836772ef94a6792b148e28a74f0055a7a1fda797517dac82c35106c5c71a2f&o=="
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>London</h1>
+          <h1>Bhubaneshwar</h1>
           <h2>{data[1]} properties</h2>
         </div>
       </div>
       <div className="featuredItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+          src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018255.jpg?k=baa51ba2ca902dbe99733badc9c9effac5ed25707d542afc3f806fb9d476e45a&o="
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Madrid</h1>
+          <h1>Varanasi</h1>
           <h2>{data[2]} properties</h2>
+        </div>
+      </div>
+      <div className="featuredItem">
+        <img
+          src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018362.jpg?k=70bb068f5ad374af5d3f628260d998ab0dd71b7e0bfb1ddf53040be6fe8ea4f3&o="
+          alt=""
+          className="featuredImg"
+        />
+        <div className="featuredTitles">
+          <h1>Agra</h1>
+          <h2>{data[3]} properties</h2>
         </div>
       </div>
       </>

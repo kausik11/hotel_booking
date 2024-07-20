@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
   position: relative;
+  /* background-image: url('https://static.readytotrip.com/upload/information_system_24/5/8/6/item_5860171/information_items_5860171.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headerContainer {
@@ -34,6 +38,7 @@
   border-radius: 20px;
 }
 
+
 .headerDesc {
   margin: 20px 0px;
 }
@@ -45,6 +50,7 @@
   border: none;
   padding: 10px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .headerSearch {
